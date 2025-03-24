@@ -14,6 +14,11 @@ provider "fortios" {
   insecure     = "true"
 }
 
+variable "api_token" {
+  description = "API token for authentication"
+  type        = string
+  sensitive   = true
+}
 
 resource "fortios_system_dns" "trname" {
   cache_notfound_responses = "disable"
