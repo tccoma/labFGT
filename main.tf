@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "fortios" {
-  hostname     = "220.233.67.203:10443"
+  hostname     = "54.72.61.25:8443"
   token        = "token"
   insecure     = "true"
 }
