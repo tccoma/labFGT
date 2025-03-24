@@ -10,10 +10,15 @@ terraform {
 
 provider "fortios" {
   hostname     = "54.72.61.25:8443"
-  token        = "token"
+  token        = var.api_token
   insecure     = "true"
 }
 
+variable "api_token" {
+  description = "API token for authentication"
+  type        = string
+  sensitive   = true
+}
 
 
 resource "fortios_system_dns" "trname" {
