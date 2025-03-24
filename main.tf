@@ -15,8 +15,6 @@ provider "fortios" {
 }
 
 
-
-
 resource "fortios_system_dns" "trname" {
   cache_notfound_responses = "disable"
   dns_cache_limit          = 5000
