@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "fortios" {
-  hostname     = "54.72.61.25:8443"
+  hostname     = "18.202.66.78:8443"
   token        = var.api_token
   insecure     = "true"
 }
