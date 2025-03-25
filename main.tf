@@ -26,7 +26,7 @@ resource "fortios_system_dns" "trname" {
   dns_cache_ttl            = 1800
   ip6_primary              = "::"
   ip6_secondary            = "::"
-  primary                  = "1.1.1.1"
+  primary                  = "8.8.8.8"
   retry                    = 2
   secondary                = "8.8.4.4"
   source_ip                = "0.0.0.0"
